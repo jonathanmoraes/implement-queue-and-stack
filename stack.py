@@ -31,7 +31,7 @@ class Stack:
     
     # verifica se a pilha esta vazia
     def is_empty(self) -> bool:
-        return not self._count > 0
+        return self._count < 1
 
     def __str__(self):
         r = ""
