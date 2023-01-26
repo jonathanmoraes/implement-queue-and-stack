@@ -37,11 +37,10 @@ class Queue:
     
     # verifica se a fila esta vazia
     def is_empty(self):
-        return not self._count > 0
+        return self._count < 1
 
     # retorna o tamanho da fila 
     def __len__(self):
-        """Retorna o tamanho da lista"""
         return self._count
 
     # retorna a representação visual da fila 
